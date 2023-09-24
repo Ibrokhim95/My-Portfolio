@@ -83,12 +83,12 @@
 
 @media (max-width: 590px) {
     .introBg{
-        width: 100%;
-        top: -2rem;
+        width: 130%;
+        top: -7rem;
         right: -2rem;
     }
 
     .introBg img{
-        width: 100%;
+        width: 110%;
     }
 }
