@@ -5,12 +5,14 @@ import emailjs from '@emailjs/browser'
 const Contact = () => {
     const form = useRef()
     
-    window.alert = function(timeout=null) {
-        const alert = document.createElement('div')
-        const alertButton = document.createElement('button')
-        alertButton.innerText = 'OK'
-        alert.classList.add('alert')
-    }
+    // window.alert = function(timeout=null) {
+    //     const alert = document.createElement('div')
+    //     const alertButton = document.createElement('button')
+    //     alertButton.innerText = 'OK'
+    //     alert.classList.add('alert')
+    // }
+
+    console.log(alert);
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -19,7 +21,7 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 e.target.reset()
-                alert('Email Sent ! (Elektron pochta yuborildi !)')
+                alert(`Email Sent !                 (Elektron pochta yuborildi !)`)
             }, (error) => {
                 console.log(error.text);
             })
