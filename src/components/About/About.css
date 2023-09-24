@@ -1,0 +1,102 @@
+#about{
+    padding-block: 7rem;
+}
+
+#about h1{
+    margin-bottom: 2rem;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+#about h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background: #207561;
+}
+
+.aboutGrid {
+    display: flex;
+}
+
+.aboutGrid p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.aboutFlex {
+    display: flex;
+    width: 66%;
+}
+
+.aboutFlex .flexDiv{
+    width: 50%;
+}
+
+.aboutFlex .img {
+    width: 50%;
+    margin-inline: 30px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.aboutFlex .img img{
+    width: 95%;
+    position: absolute;
+    top: -3rem;
+}
+
+.gridDiv{
+    width: 33%;
+}
+
+@media (max-width: 992px) {
+    .aboutGrid{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutFlex{
+        width: 100%;
+        flex-direction: column-reverse;       
+    }
+    .aboutFlex .flexDiv{
+        width: 100%;
+    }    
+    .aboutFlex .img{
+        width: 100%;
+        height: calc(100vw - 200px);
+        margin-inline: 0;
+        margin-bottom: 20px;
+    }
+
+    .aboutFlex .img img {
+        top: -5rem;
+    }
+
+    .gridDiv {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutFlex .img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    #about h1{
+        font-size: 1.5rem;
+    }
+
+    #about p{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: 'Arbutus Slab', serif;
+}
+
+body{
+  background: #fff;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.button{
+  background: #207561;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  width: max-content;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+
+@media (min-width: 300px) {
+  .container{
+    padding-inline: 30px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+      margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width: 930px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1130px;
+  }
+}

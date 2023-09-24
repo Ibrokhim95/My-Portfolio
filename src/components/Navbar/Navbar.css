@@ -1,0 +1,99 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    transition: .4s all ease-in-out;
+}
+
+.navMenu{
+    display: flex;
+}
+
+.logo{
+    font-size: 1.5rem;
+    color: #207561;
+    padding: 5px 10px;
+    margin-inline: 3rem;
+    cursor: pointer;
+}
+
+.navMenuItem{
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-inline: .5rem;
+}
+
+.navMenuItem:hover{
+    color: #207561;
+}
+
+.active{
+    color: #207561;
+}
+
+.navbarMobile {
+    display: none;
+    justify-content: center;
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: .4s all ease-in-out;
+}
+
+.navbarMobile .icon {
+    font-size: 28px;
+}
+
+.overlay{
+    position: absolute;  
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.484);
+    /* z-index: 99; */
+}
+
+.sidebar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding-top: 110px;
+    background: #fff;
+    overflow: hidden;
+    transition: .5s all ease;
+    z-index: 200;
+    transition: .5s ease;
+}
+
+.sidebar .icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+}
+
+.sidebar a{
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 992px) {
+    .navMenu{
+        display: none;
+    }
+
+    .navbarMobile {
+        display: flex;
+    }
+}

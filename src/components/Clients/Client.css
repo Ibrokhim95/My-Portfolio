@@ -1,0 +1,33 @@
+#client{
+    padding-block: 7rem;
+}
+
+#client h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#client .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#client .flex div {
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    #client .flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    #client .flex div {
+        width: 100%;
+    }
+    #client .flex div img{
+        width: 100%;
+    }
+}

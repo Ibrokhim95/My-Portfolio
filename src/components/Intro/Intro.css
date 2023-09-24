@@ -1,0 +1,94 @@
+#intro{
+    background: #f8f9fa;
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.introContent{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.introContent h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+
+.introContent h5{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    z-index: 2;
+}
+
+.introContent .button{
+    z-index: 2;
+}
+
+.introBg{
+    position: absolute;
+    top: -8rem;
+    right: 0;
+    object-fit: cover;
+    width: 50%;
+}
+
+.introBg img{
+    z-index: 1;
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    .introBg{
+        top: -5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .introBg{
+        width: 90%;
+        top: -7rem;
+        right: -15rem;
+    }   
+
+    .introBg img{
+        width: 65%;
+        opacity: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #intro{
+        border: none;
+        max-height: 600px;
+    }    
+
+    .introBg{
+        width: 100%;
+        right: -8rem;
+    }
+
+    .introBg img{
+        width: 70%;
+    }
+}
+
+@media (max-width: 590px) {
+    .introBg{
+        width: 100%;
+        top: -2rem;
+        right: -2rem;
+    }
+
+    .introBg img{
+        width: 100%;
+    }
+}
