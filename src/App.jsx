@@ -3,6 +3,7 @@ import Swiper from 'swiper'
 import About from './components/About/About'
 import Client from './components/Clients/Client'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 import Intro from './components/Intro/Intro'
 import Loader from './components/Loader/Loader'
 import Navbar from './components/Navbar/Navbar'
@@ -35,6 +36,7 @@ const App = () => {
       <Swipe/>
       <Client/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }

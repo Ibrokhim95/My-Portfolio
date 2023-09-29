@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbarMobile">
-        <Link to='intro' smooth={true} className="logo">Me.</Link>
+        <Link to='intro' smooth={true} spy={true} offset={-100} className="logo">Me.</Link>
 
         <FaBars onClick={() => toggle()} className='icon'/>
       </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
 
         <Link onClick={() => toggle()} activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='navMenuItem'>Home</Link>
         <Link onClick={() => toggle()} activeClass='active' to='services' spy={true} smooth={true} offset={50} duration={500} className='navMenuItem'>Services</Link>
-        <Link onClick={() => toggle()} activeClass='active' to='about' spy={true} smooth={true} offset={10} duration={500} className='navMenuItem'>About</Link>
+        <Link onClick={() => toggle()} activeClass='active' to='about' spy={true} smooth={true} offset={150} duration={500} className='navMenuItem'>About</Link>
         <Link onClick={() => toggle()} activeClass='active' to='portfolio' spy={true} smooth={true} offset={-50} duration={500} className='navMenuItem'>Portfolio</Link>
         <Link onClick={() => toggle()} activeClass='active' to='client' spy={true} smooth={true} offset={-150} duration={500} className='navMenuItem'>Client</Link>
         <Link onClick={() => toggle()} activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className='navMenuItem'>Contact</Link>

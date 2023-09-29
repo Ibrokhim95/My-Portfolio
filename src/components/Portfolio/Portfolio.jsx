@@ -2,6 +2,7 @@ import React from 'react'
 import './Portfolio.css'
 import cart from '../../assets/React cart.jpg'
 import task from '../../assets/Task manaer.jpg'
+import davlatlar from '../../assets/davlatlar.jpg'
 
 const Portfolio = () => {
   return (
@@ -25,9 +26,9 @@ const Portfolio = () => {
           </div>
           <div className="portfolioCard">
             <div className="img">
-              <img src={cart} alt="" />
+              <img src={davlatlar} alt="" />
             </div>
-            <a className='a' href="https://react-cart-store.netlify.app/" target={'_blank'}>React Cart</a>
+            <a className='a' href="https://davlatlar-haqida-malumotlar.netlify.app/" target={'_blank'}>Countries</a>
           </div>
         </div>
       </div>
